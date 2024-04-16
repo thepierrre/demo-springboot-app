@@ -60,6 +60,9 @@
 							<goal>resources</goal>
 						</goals>
 						<configuration>
+							<nonFilteredFileExtensions>
+								<nonFilteredFileExtension>properties</nonFilteredFileExtension>
+							</nonFilteredFileExtensions>
 							<outputDirectory>${project.build.outputDirectory}</outputDirectory>
 							<resources>
 								<resource>
