@@ -1,0 +1,10 @@
+appName: sports-service-backend
+
+namespace: sports-service-backend
+
+replicaCount: 1
+
+image:
+  repository: image-registry.openshift-image-registry.svc:5000/sports-service-backend/sports-service-backend
+  tag: latest
+
