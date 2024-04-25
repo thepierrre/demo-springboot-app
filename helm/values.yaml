@@ -1,10 +1,12 @@
-appName: sports-service-backend
+appName: springboot-demo
 
-namespace: sports-service-backend
+namespace: springboot-cicd
 
 replicaCount: 1
 
 image:
-  repository: image-registry.openshift-image-registry.svc:5000/sports-service-backend/sports-service-backend
+  repository: image-registry.openshift-image-registry.svc:5000/springboot-cicd/springboot-demo
   tag: latest
 
+git:
+  repository: https://github.com/thepierrre/demo-springboot-app
