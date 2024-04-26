@@ -7,7 +7,7 @@ USER root
 COPY target/demo-app-1.3.3.jar demo-app.jar
 
 # Set environment variable to store the version from pom.xml
-ENV APP_VERSION=""
+ENV APP_VERSION="1.3.3"
 
 # Create a directory for the script and copy it with correct permissions
 RUN mkdir -p /usr/local/bin
