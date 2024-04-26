@@ -4,10 +4,10 @@ FROM registry.access.redhat.com/ubi9/openjdk-21
 USER root
 
 # Copy the jar file to the container
-COPY target/demo-app-1.3.3.jar demo-app.jar
+COPY target/demo-app-1.3.4.jar demo-app.jar
 
 # Set environment variable to store the version from pom.xml
-ENV APP_VERSION="1.3.3"
+ENV APP_VERSION="1.3.4"
 
 # Create a directory for the script and copy it with correct permissions
 RUN mkdir -p /usr/local/bin
@@ -19,4 +19,4 @@ USER 1001
 
 # Set the entrypoint to use the dynamically determined jar name
 #ENTRYPOINT ["/bin/bash", "-c", "/usr/local/bin/extract_version.sh && java -jar demo-app-${APP_VERSION}.jar"]
-ENTRYPOINT ["/bin/bash", "-c", "/usr/local/bin/extract_version.sh && java -jar demo-app-1.3.3.jar"]
+ENTRYPOINT ["/bin/bash", "-c", "/usr/local/bin/extract_version.sh && java -jar demo-app-1.3.4.jar"]
