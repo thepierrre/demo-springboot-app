@@ -19,4 +19,4 @@ USER 1001
 
 # Set the entrypoint to use the dynamically determined jar name
 #ENTRYPOINT ["/bin/bash", "-c", "/usr/local/bin/extract_version.sh && java -jar demo-app-${APP_VERSION}.jar"]
-ENTRYPOINT ["/bin/bash", "-c", "/usr/local/bin/extract_version.sh && java -jar demo-app-1.3.4.jar"]
+ENTRYPOINT ["/bin/bash", "-c", "java -jar demo-app-1.3.4.jar"]
