@@ -4,7 +4,7 @@ namespace: springboot-demo
 replicaCount: 2
 
 image:
-  repository: image-registry.openshift-image-registry.svc:5000/springboot-cicd/springboot-demo
+  repository: image-registry.openshift-image-registry.svc:5000/springboot-demo/springboot-demo
   tag: latest
 
 #git:
