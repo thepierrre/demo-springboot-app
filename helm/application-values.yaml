@@ -6,6 +6,3 @@ replicaCount: 2
 image:
   repository: image-registry.openshift-image-registry.svc:5000/springboot-demo/springboot-demo
   tag: latest
-
-#git:
-#  repository: https://github.com/thepierrre/demo-springboot-app
