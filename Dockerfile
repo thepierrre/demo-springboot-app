@@ -4,7 +4,7 @@ FROM registry.access.redhat.com/ubi9/openjdk-21
 USER root
 
 # Copy the jar file to the container
-COPY target/demo-app-*.jar demo-app.jar
+COPY target/demo-app-1.3.3.jar demo-app.jar
 
 # Set environment variable to store the version from pom.xml
 ENV APP_VERSION=""
