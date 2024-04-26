@@ -7,12 +7,12 @@ USER root
 COPY target/demo-app-*.jar demo-app.jar
 
 # Set environment variable to store the version from pom.xml
-ENV APP_VERSION="1.3.4"
+#ENV APP_VERSION="1.3.6"
 
 # Create a directory for the script and copy it with correct permissions
-RUN mkdir -p /usr/local/bin
-COPY extract_version.sh /usr/local/bin/extract_version.sh
-RUN chmod +x /usr/local/bin/extract_version.sh
+#RUN mkdir -p /usr/local/bin
+#COPY extract_version.sh /usr/local/bin/extract_version.sh
+#RUN chmod +x /usr/local/bin/extract_version.sh
 
 # Switch back to a non-root user
 USER 1001
