@@ -1,12 +1,11 @@
 appName: springboot-demo
+namespace: springboot-demo
 
-namespace: springboot-cicd
-
-replicaCount: 1
+replicaCount: 2
 
 image:
   repository: image-registry.openshift-image-registry.svc:5000/springboot-cicd/springboot-demo
   tag: latest
 
-git:
-  repository: https://github.com/thepierrre/demo-springboot-app
+#git:
+#  repository: https://github.com/thepierrre/demo-springboot-app
