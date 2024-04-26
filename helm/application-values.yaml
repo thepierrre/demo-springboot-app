@@ -5,4 +5,4 @@ replicaCount: 2
 
 image:
   repository: image-registry.openshift-image-registry.svc:5000/springboot-demo/springboot-demo
-  tag: latest
+  tag: 1.3.3
