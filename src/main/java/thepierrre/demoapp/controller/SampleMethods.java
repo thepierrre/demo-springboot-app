@@ -9,7 +9,7 @@ public class SampleMethods {
 
     @GetMapping("/")
     public String home() {
-        return "Welcome to the demo Spring Boot application!!!";
+        return "Welcome to the demo Spring Boot application!";
     }
 
     @GetMapping("/add")
