@@ -1,0 +1,8 @@
+appName: springboot-demo
+namespace: springboot-demo
+
+replicaCount: 2
+
+image:
+  repository: image-registry.openshift-image-registry.svc:5000/springboot-demo/springboot-demo
+  tag: 1.3.6
