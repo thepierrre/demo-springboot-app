@@ -19,7 +19,7 @@ class SampleMethodsTest {
 
     @Test
     public void testHome() {
-        String expected = "Welcome to the demo Spring Boot application!";
+        String expected = "Welcome to the demo Spring Boot application";
         String result = this.restTemplate.getForObject("http://localhost:" + port + "/", String.class);
         assertEquals(expected, result);
     }
